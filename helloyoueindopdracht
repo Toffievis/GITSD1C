@@ -1,0 +1,37 @@
+from secrets import choice
+from time import sleep
+
+while True:
+    print("Je bent een ex militair uit Noord-Korea")
+    print("die nadat hij zijn dienst in het leger heeft voltooid werd gepromoveerd naar admiraal van het Noord-Koreaanse leger")
+    print("Je moest 2 weken daarna de grootste keuze uit je leven maken!")
+    print("je werd uitgenodigd om een gesprek te hebben met de huidige leider van Noord-Korea: Kim Yung Un")
+    print("Ga je wel of niet?")
+    print("(WAARSCHUWING) Als je wel gaat kan je een gevaarlijk leven voor de boeg krijgen!")
+
+
+
+    choice1 = input(" typ: wel of niet:")   #eerste vraag
+    if choice1 == ("wel"):
+        print("je kiest er voor om wel het gesprek bij te wonen")
+        print("het blijkt dat er een spion van het turkse leger ergens in noord korea is")
+        print("De vraag van Kim is of jij je persoonlijk wil richten om het vangen van deze crimineel")
+        choice1a = input("ja of nee")    #tweede vraag
+        if choice1a == ("ja"):
+            print("")
+    
+    elif choice1 == ("niet"):
+        print("je kiest er voor om niet met kim in gesprek te gaan")
+        print("hierdoor behoudt je je baan in het leger en kan je voor je vrouw en kinderen zorgen")
+        print("2 maanden later krijg je te horen dat er een spion uit het turkse lerger al jou dierbaren heeft omgebracht")
+        print("wat doe je?")
+        choice1b = input("je kan kiezen uit:revenge of vluchten")
+        if choice1b == ("revenge"):
+            print("je hebt gekozen voor revenge")
+            print("Je zet jezelf volledig op het vangen van deze crimineel")
+            print("1 maand later... ")
+            print("Je bent er achter gekomen dat hij een nieuwe target heeft")
+            print
+
+
+    break
