@@ -3,35 +3,190 @@ from time import sleep
 
 while True:
     print("Je bent een ex militair uit Noord-Korea")
-    print("die nadat hij zijn dienst in het leger heeft voltooid werd gepromoveerd naar admiraal van het Noord-Koreaanse leger")
-    print("Je moest 2 weken daarna de grootste keuze uit je leven maken!")
-    print("je werd uitgenodigd om een gesprek te hebben met de huidige leider van Noord-Korea: Kim Yung Un")
+    sleep(1)
+    print("die, nadat hij zijn dienst in het leger heeft voltooid")
+    sleep(2)
+    print("wordt gepromoveerd tot admiraal van het Noord-Koreaanse leger")
+    sleep(2)
+    print("Na 2 weken moet je de aller grootste keuze uit je leven maken")
+    sleep(2)
+    print("Je hebt een uitnodiging gekregen om een gesprek te hebben met de huidige leider van Noord-Korea: Kim Yung Un")
+    sleep(2)
     print("Ga je wel of niet?")
+    sleep(2)
     print("(WAARSCHUWING) Als je wel gaat kan je een gevaarlijk leven voor de boeg krijgen!")
 
 
+    choice1 = input(" typ: wel:(w) of niet:(n) :")   
+    if choice1 == ("w"):  #1A
+        print("je kiest ervoor om het gesprek aan te gaan")
+        print("Het blijkt dat er een spion van het Turkse leger ergens in Noord-Korea is")
+        print("De vraag van Kim Yung Un is of jij je persoonlijk wil richten op het vangen van deze crimineel")
+        choice1a = input("ja of nee: ")    
+        if choice1a == ("nee"):
+            print("Je hebt ervoor gekozen je niet te focussen op de spion")
+            print("en gaat verder met je normale leven")
+            print("Dit blijkt een foute beslissing")
+            print("Je wordt geëlimineerd!")
+            print("Het blijkt dat jij de echte target van de spion was")
+            break
 
-    choice1 = input(" typ: wel of niet:")   #eerste vraag
-    if choice1 == ("wel"):
-        print("je kiest er voor om wel het gesprek bij te wonen")
-        print("het blijkt dat er een spion van het turkse leger ergens in noord korea is")
-        print("De vraag van Kim is of jij je persoonlijk wil richten om het vangen van deze crimineel")
-        choice1a = input("ja of nee")    #tweede vraag
-        if choice1a == ("ja"):
-            print("")
+        elif choice1a == ("ja"): #1A2
+            print("je hebt er voor gekozen om je op de spion te focussen")
+            print("na 2 weken super actief opzoek te zijn geweest")
+            print("kom je er achter dat hij een schuilplaats heeft op 15min loopafstand")
+            print("wat doe je? Bereid je je voor op de strijd of ga je er gelijk heen?")
+            print("type voor voorbereiden:(v)en voor gelijk erheen:(g)")
+            choice1A2 = input()
+            if choice1A2 == ("v"):
+                print("je kiest ervoor om je beter voor te bereiden op het vangen van deze spion")
+                print("dit had niet slechter kunnen aflopen")
+                print("want het blijkt dat de spion een atoombom heeft gemaakt die heel Noord-Korea laat ontploffen")
+                print("gg better luck next time")
+                break
+            elif choice1A2 == ("g"):
+                print("je kiest ervoor om er gelijk heen te gaan")
+                print("dit is een riskante keuze")
+                print("aangezien je nog niet zoveel weet over deze spion")
+                while True:
+
+                    print("kies hoe je de spion wil naderen: sneaky of agressief?")
+                    choice1A22 = input("type voor sneaky:(s) en voor agressief:(a)")
+                    if choice1A22 == ("s"):
+                        print("je kiest er voor om sneaky te werk te gaan")
+                        print("je sluipt naar de schuilplaats")
+                        print("en ziet dat er een raam op een kier staat")
+                        print("ga je via het raam of trap je de deur in?")
+                        choice1A221 = input("raam(r)/deur(d)")
+                        if choice1A221 == ("r"):
+                            print("je sneakt door het raam")
+                            print("helaas word je door de spion gespot en gedood")
+                            print("game over")
+                            break
+                        elif choice1A221 != ("0"):
+                            break
+                        elif choice1A221 == ("d"):
+                            print("je trapt de deur in")
+                            print("en ziet daar in het midden van de kamer de spion staan")
+                            print("die een wapen op je heeft gericht")
+                            print("wat doe je, grijp voor je wapen of onderhandel met hem")
+                            choice1A222 = input("typ w/o wapen:(w)/onderhandel:(o)")
+                            if choice1A222 == ("w"):
+                                print("je grijpt je wapen alleen ben je te laat")
+                                print("de spion schiet je dood")
+                                print("rest in piece")
+                                break
+
+                            elif choice1A222 == ("o"):
+                                print("je onderhandeld met de spion")
+                                print("jullie komen uiteindelijk tot de conclussie")
+                                print("dat jullie eigenlijk veel op elkaar lijken")
+                                print("je vormt een team met de spion en veroverd met ze tweeën heel noord-korea")
+                                print("YOU WIN!!!!")
+                                break
+
+                    if choice1A22 == ("a"):
+                        print("je hebt voor de agressieve manier gekozen")
+                        print("je pakt je shotgun rent naar binnen")
+                        print("je richt en schiet de spion")
+                        print("je hebt de spion geraakt, en hij is dood gebloedt")
+                        print("goed gespeeld je hebt gewonnen")
+                        break
+                    elif choice1A22 != ("0"):
+                        continue
+
+        elif choice1a != (""):
+            continue
+    elif choice1 == ("n"):  #1B
+        print("Je kiest ervoor om het gesprek met Kim Yung Un niet aan te gaan")
+        print("Hierdoor behoud je je baan in het leger en kun je voor je vrouw en kinderen zorgen")
+        print("Na 2 maanden krijg je te horen:")
+        print("dat een spion uit het Turkse leger al jouw dierbaren heeft omgebracht")
+        print("Wat ga je doen?")
+        choice1b = input("Revenge:(r) of vluchten:(v)  :")
+        if choice1b == ("r"):
+            print("Je neemt revenge")
+            print("Je zet alles op alles om deze spion te vangen")
+            print("Na 1 maand schaduwen kom je erachter dat hij een nieuwe target heeft")
+            print("Namelijk de dochter van Kim Yung Un!")
+            print("Je weet dat je nu snel moet handelen voordat het te laat is")
+            print("geef je de spion aan of elimineer je hem?")
+            choice1b1 = input("veraden(v)/elimineren(e)")
+            if choice1b1 == ("v"):
+                print("je besluit dat het beste is om nu naar de politie te gaan")
+                print("Deze spion moet achter slot en grendel")
+                print("Helaas is de politie heel erg corrupt en werkt samen met de spion")
+                print("je wordt gearresteerd game over")
+                break
+            elif choice1b1 == ("e"):
+                print("Je zult alleen veilig zijn als hij wordt geëlimineerd")
+                print("En alleen jij kunt dit doen")
+                print("want na maanden observeren ken je al zijn moves")
+                print("Maar je moet wel snel zijn anders heeft hij je eerder te pakken")
+                print("Bombardeer je zijn schuilplaats of ren je naar binnen met een minigun")
+                choice1b12 = input("bombardeer:(b)/minigun(m) :")
+                if choice1b12 == ("b"):
+                    print("je kiest ervoor om zijn schuilplaats te bombarderen")
+                    print("Je haalt de explosieven op en een drone")
+                    print("Een haf uur later kan je gaan beginnen")
+                    print("je hangt de explosieven vast aan de droneen vliegt de drone omhoog ")
+                    print("je drukt en knop in en BOEM!, de schuilplaats en de spion zijn verwoest")
+                    print("Je word gepromoveerd naar leider van noord-korea gefeliciteerd")
+                    print("je hebt gewonnen!!")
+                    break
+                elif choice1b12 == ("m"):
+                    print("je kiest er voor om met een minigun naar binnen te rennen")
+                    print("je trapt de deur open en je schiet alles overhoop inclusief de spion")
+                    print("nadat je zeker weet dat de spion dood is")
+                    print("meld je het nieuws aan Kim Yung un")
+                    print("hij promoveert je vervolgens naar de nieuwe leider van Noord-Korea")
+                    print("je hebt gewonnen!!")
+                    break
+        elif choice1b == ("v"):
+            print("Je slaat op de vlucht")
+            print("Je moet nu zo snel mogelijk het land verlaten")
+            print("hoe ga je het land verlaten?")
+            print("Naar Rusland per vliegtuig of Zweden per boot?")
+            choice1b2 = input("vliegtuig:(v)/boot(b)")
+            if choice1b2 == ("v"):
+                print("Je besluit naar Rusland vluchten")
+                print("Dit is de meest verstandige keuze!")
+                print("Het vliegtuig vertrekt al met 10  minuten")
+                print("Snel een ticket halen. Vlieg je 1ste of 2de klasse?")
+                choice1b21 = input("typ (1)/(2)")
+                if choice1b21 == ("1"):
+                    print("Je besluit 1ste klasse te vliegen. Comfort en luxe.")
+                    print("Dit heb je wel verdient")
+                    print("Als je hoog in de lucht bent")
+                    print("wordt het tijd om te vieren dat je de spion te vlug af was")
+                    print("Champagne!!!!")
+                    print("De stewardess opent de fles…...")
+                    print("BOEM Het vliegtuig ontploft. Niemand heeft het overleefd")
+                    print("het meest abrupte einde van allemaal")
+                    print("volgende keer beter")
+                    break
+                elif choice1b21 == ("2"):
+                    print("Je beluit 2de klasse te vliegen")
+                    print("Beter om zo anoniem mogelijk te vliegen")
+                    print("Als je hoog in de lucht bent, begin je je eindelijk te ontspannen")
+                    print("Je kunt gaan denken aan een nieuwe toekomst")
+                    print("Maar dat zal niet lang duren")
+                    print("want ineens is er een enorme knal")
+                    print("Het vliegtuig explodeert en alle inzittenden zijn dood")
+                    print("game over")
+                    break
+                elif choice1b21 != ("1"):
+                    break
+            elif choice1b2 == ("b"):
+                print("Zweden dit lijkt de meest veilige keuze")
+                print('Helaas, de boot is onderweg naar de haven gezonken')
+                print("nu moet je nog een dag wachten")
+                print("Door dit ongelukkige gebeuren weet de spion je te traceren en slaat toe")
+                print("Je wordt vermoord. Rest in peace")
+                break
+            
+        elif choice1 != ("ja"):
+            continue
+        
     
-    elif choice1 == ("niet"):
-        print("je kiest er voor om niet met kim in gesprek te gaan")
-        print("hierdoor behoudt je je baan in het leger en kan je voor je vrouw en kinderen zorgen")
-        print("2 maanden later krijg je te horen dat er een spion uit het turkse lerger al jou dierbaren heeft omgebracht")
-        print("wat doe je?")
-        choice1b = input("je kan kiezen uit:revenge of vluchten")
-        if choice1b == ("revenge"):
-            print("je hebt gekozen voor revenge")
-            print("Je zet jezelf volledig op het vangen van deze crimineel")
-            print("1 maand later... ")
-            print("Je bent er achter gekomen dat hij een nieuwe target heeft")
-            print
-
-
     break
